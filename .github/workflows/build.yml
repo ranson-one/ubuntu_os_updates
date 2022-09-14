@@ -21,8 +21,21 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+    - name: Build dummy deb file with Maven
       run: |
         mkdir target
         mv readme.txt target
         mvn -B package --file pom.xml
+
+    - name: run os upates build script
+      run: |
+        chmod +x build_os_updates.sh
+        ./build_os_updates.sh
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ubuntu-os-updates-${{github.run_number}}
+        path: |
+          target/*.deb
+          *.tgz
