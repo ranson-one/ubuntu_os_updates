@@ -6,8 +6,6 @@
   <version>1.0.0</version>
   <description>Qumu Ubuntu OS Updates</description>
 
-
-   <packaging>deb</packaging>
    <build>
     <plugins>
       <plugin>
