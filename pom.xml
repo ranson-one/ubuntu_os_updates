@@ -19,6 +19,10 @@
               <goal>jdeb</goal>
             </goals>
             <configuration>
+              <verbose>true</verbose>
+              <timestamped>true</timestamped>
+              <controlDir>${basedir}/src/deb/control</controlDir>
+              <attach>true</attach>
               <dataSet>
                 <data>
                   <src>${project.build.directory}/readme.txt</src>
