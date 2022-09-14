@@ -21,7 +21,7 @@
             <configuration>
               <verbose>true</verbose>
               <timestamped>true</timestamped>
-              <controlDir>${basedir}/src/deb/control</controlDir>
+              <controlDir>${basedir}/src</controlDir>
               <attach>true</attach>
               <dataSet>
                 <data>

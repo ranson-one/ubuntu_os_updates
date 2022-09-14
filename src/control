@@ -1,0 +1,8 @@
+Package: qumu-videonet-edge
+Version: [[version]]
+Depends: autofs, libcap2, pwauth
+Section: misc
+Priority: low
+Architecture: all
+Description: The Qumu VideoNet Edge software package
+Maintainer: engineering@qumu.com
