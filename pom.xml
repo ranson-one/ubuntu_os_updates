@@ -21,7 +21,7 @@
             <configuration>
               <dataSet>
                 <data>
-                  <src>${project.build.directory}/${project.build.finalName}.jar</src>
+                  <src>${project.build.directory}/readme.txt</src>
                   <type>file</type>
                   <mapper>
                     <type>perm</type>
